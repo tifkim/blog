@@ -1,0 +1,21 @@
+---
+layout: post
+title: Local Installation ¯\_(ツ)_/¯
+date: 2015-09-14 20:53:37.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- learntocode
+tags:
+- thefirehoseproject
+---
+<p>At the start of the Firehose Project, we received thorough instructions on setting up our Vagrant environments so we could hit the ground running right away. That was great in the beginning, but now that I've completed 2 of the 3 major web app projects, I wanted to better understand the nuts and bolts so I thought installing these programs would be a good first step.</p>
+<p>To document my steps and what ultimately worked for my OS X setup:</p>
+<ul>
+<li>Many of the outlined steps I'd searched seemed outdated or didn't match what I was seeing in my terminal, but following this Code Fellows blog post helped me get most of the way there. [<a href="https://www.codefellows.org/blog/three-battle-tested-ways-to-install-postgresql">3 Battle-Tested Ways to Install PostgreSQL</a>]</li>
+<li><strong>Using Homebrew to install PostgreSQL</strong> turned out to be the easier than first downloading the enterprise or app options from the main website.</li>
+<li>The database.yml pages generated from the <em>rails new</em> prompt seemed different from what I was used to with an inherited shared section, but I was glad I could read it and understand the difference.</li>
+<li>I received a fatal error for a role that was misidentified and a particular role not having permissions, so I just had to re-check that my postgres user had database creation privileges and was properly placed across all environment settings in the database.yml file.</li>
+</ul>
+<p>There wasn't a whole lot to it in the end, but knowing what's relevant and what's noise is still difficult at this point so I had to persevere through some rabbit holes. I hadn't quite expected that it would take the better part of the day, but I finally have my test app running! I remember the first day I had to set up my VM and how good it felt to see this screen and I feel like I've just come back to that.</p>

@@ -1,0 +1,23 @@
+---
+layout: post
+title: Know Thy Self
+date: 2015-09-11 16:28:15.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- learntocode
+tags:
+- ruby
+- thefirehoseproject
+---
+<p>In the last few weeks of the Firehose Project, I've been tinkering around with image blur coding challenges in between the larger app assignments. The overall objective of this section was to create a code that would take an input image represented in an array of 0's &amp; 1's and "blur" the neighbors wherever a 1 existed (illustrated below). In the solution, you also need to prescribe the distance of neighbors that are affected (e.g. orange showing a distance of 1, yellow showing a distance of 2). For additional practice, I tried a few variations in my solutions-- in one method creating a new array to represent the transformed state and in another creating a method to manipulate the input array directly.</p>
+<p><a href="http://www.tifkim.com/wp-content/uploads/2015/09/Screen-Shot-2015-09-11-at-10.37.24-AM.png"><img class="aligncenter size-full wp-image-178" src="{{ site.baseurl }}/assets/Screen-Shot-2015-09-11-at-10.37.24-AM.png" alt="blur challenge" width="267" height="178" /></a></p>
+<p>&nbsp;</p>
+<p>Close to the end, I reached a point where I had all the major components scripted out but I would get NoMethodErrors indicating that I didn't have the proper objects being acted on. That's when my mentor made me take a step back to evaluate what objects my methods were actually passing through. To try to summarize what was happening...</p>
+<ol>
+<li>In one method, I collected an array of indices to locate where I wanted to update the image and I iterated over this indices array to change the original image.</li>
+<li>When I called that method to print the image in a following method, I expected to retrieve my image object. However, I kept getting stopped because the indices array was part of the <a href="http://www.tutorialspoint.com/ruby/ruby_methods.htm">last statement in the method</a>.</li>
+<li>BOOM. (Either the sound of my mind or my code blowing up--you choose.)</li>
+</ol>
+<p>This was something I already "knew" about methods but I didn't truly grasp how it worked until I broke something because of it.</p>

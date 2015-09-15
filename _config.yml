@@ -1,0 +1,28 @@
+# Site settings
+title: tifkim
+description: Documenting my journey learning code and other areas that interest me--productivity, project management, and healthcare technology
+url: "http://tifkim.com" # the base hostname & protocol for your site
+twitter_username: kimprint
+github_username:  tifkim
+paginate: 3
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+# Default Settings
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Tiff
+      layout: "post"
+
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"

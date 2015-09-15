@@ -1,0 +1,25 @@
+---
+layout: post
+title: Finally Live!
+date: 2015-08-14 10:33:23.000000000 -05:00
+type: post
+published: true
+status: publish
+categories:
+- learntocode
+tags:
+- wordpress
+---
+<p>It took me going back and forth periodically all day but I finally moved my WordPress site from a subdomain to the root! This was partly because I couldn't tell the difference between 2 index.php files and a lesson in reading instructions closely! Documenting this for myself in the future and for anyone who might need to do this. This will also work for moving your site in general. Disclaimer: I'm currently using Dreamhost.</p>
+<h2>Moving Wordpress (<a href="http://codex.wordpress.org/Moving_WordPress">codex doc here</a>)</h2>
+<p><i>Steps in plain English.</i></p>
+<ol>
+<li>Back up your wp-content folder and other core files (including index.php, .htaccess).</li>
+<li>Download WP Migrate Plugin and install to the website you'll soon retire.</li>
+<li>Use the plugin to export your site to a .gz file.</li>
+<li>On your legacy site, go to <strong>Settings&gt;General</strong> and update the Wordpress Site and Site URL to the new website. (Warning: This will break your legacy site link.)</li>
+<li>Install WordPress on your new site directory/site.</li>
+<li>Upload the wp-content folder and core files to your new site.</li>
+<li>Through PHPMYADMIN or a similar platform, remove all your current database files and import the .gz.</li>
+<li>Cha da!</li>
+</ol>

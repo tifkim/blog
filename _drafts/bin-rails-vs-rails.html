@@ -1,0 +1,24 @@
+---
+layout: post
+title: bin/rails vs rails
+date: 
+type: post
+published: false
+status: draft
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  _oembed_e6260b645079d2384af80087f46fefbc: "{{unknown}}"
+author:
+  login: tifkim
+  email: timinki@gmail.com
+  display_name: tifkim
+  first_name: ''
+  last_name: ''
+---
+<p>I've seen mixed instructions for bin/rails and rails commands, so I was wondering what the downstream impacts were.</p>
+<p>What happens when you type rails is that bash (the shell program running inside your terminal window" looks at your PATH variable and goes through all the directories in that path looking for a command called rails. When it finds it, it executes the program.</p>
+<p>The problem is that if you could have multiple rails versions and it might not find the one you want to use. using bin/rails guarantees that it uses the version you want since its the rails thats in the bin directory of the current project</p>
+<p>&nbsp;</p>
+<p>https://teamtreehouse.com/community/not-including-prefix-binrails-before-generate-scaffold</p>
