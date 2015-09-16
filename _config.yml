@@ -1,6 +1,7 @@
 # Site settings
 title: tifkim
 description: Documenting my journey learning code and other areas that interest me--productivity, project management, and healthcare technology
+baseurl: '/blog'
 url: "http://tifkim.com" # the base hostname & protocol for your site
 twitter_username: kimprint
 github_username:  tifkim
